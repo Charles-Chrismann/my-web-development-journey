@@ -153,6 +153,146 @@ This works because Nginx take a look at the 'host' property of the incoming requ
 
 ## Glossary
 
+### Example Section
+
+#### Example
+
+This is the definition of an example 
+
+Official website: [example.com](#)
+
+```ts
+// A comment in the code
+function foo(): string {
+  return 'bar'
+}
+```
+
+Instal it here: [instal-it-here.com](#)
+
+Getting started or tuto: [tuto-it-here.com](#)
+
+Other ressources:
+- [here](#)
+
+Some alternatives
+- [Alt 1](#)
+- [Alt 2](#)
+- [Alt 3](#)
+
+
+### Global
+
+#### Markup Language
+
+#### Programming Language
+
+#### Framework
+
+#### Paradigm
+
+#### Cache
+
+#### SOLID
+
+### Internet
+
+#### Content Delivery Network (CDN)
+
+### Front-end development
+
+#### HTML
+
+#### PUG
+
+#### CSS
+
+#### SASS
+
+#### SCSS
+
+#### LESS
+
+#### Javascript
+
+#### JQuery
+
+#### Components
+
+#### React
+
+**React** is a Javascript library developed by Facebook in 2013. It is the most influential ui library of modern front-end development. Even if it is still a library, its environment has grown enough to be now considered as a front-end [framework](#framework).
+
+Official website: [react.dev](https://react.dev/)
+
+React [getting-started](https://react.dev/learn)
+
+Other ressources:
+- [Fireship - React in 100 Seconds](https://www.youtube.com/watch?v=Tn6-PIqc4UM)
+
+#### Angular
+
+#### Vue
+
+#### Svelte
+
+#### Solide
+
+#### WebAssembly
+
+### Backend development
+
+#### Apache HTTP Server
+
+**Apache HTTP Server** is an HTTP server created by the Apache fundation
+
+Official website: [httpd.apache.org](https://httpd.apache.org/)
+
+Alternatives:
+- [NGINX](#nginx)
+
+#### NGINX
+
+#### Proxy
+
+### Database environment
+
+#### Database
+
+#### ACID
+
+#### Object Relation Mapping (ORM)
+
+#### Graphql
+
+#### SQL
+
+#### POSTGRES
+
+#### MySQL
+
+#### MariaDB
+
+#### Cassandra
+
+#### Redis
+
+### The Programming Languages
+
+#### C
+
+#### C++
+
+#### C#
+
+#### Php
+
+#### Java
+
+#### Javascript
+
+
+
 ## To do
 
 - write an answer template (in my case, tl;dr, explanation, ...)
