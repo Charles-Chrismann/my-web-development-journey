@@ -13,22 +13,31 @@ Please note that this repository is NOT intended to be a proof of good practices
 
 ## Table of Contents
 
-- [Front-end web development](#front-end-web-development)
-  - [Bind your front-end app to your backend api in development](#bind-your-front-end-app-to-your-backend-api-in-development)
-- [Nest](#nest)
-    - [setup static file module but keep controller to root with global prefix](#setup-static-file-module-but-keep-controller-to-root-with-global-prefix)
-- [Aws](#aws)
-    - Set up reverse proxy with nginx
-- [Docker](#docker)
-    - Connect the cli to Docker Hub in linux
-- [Internet](#)
-  - Bind domain names or subdomain to an ip address
+- [Introduction](#my-web-development-journey)
+- [Table of Contents](#table-of-contents)
+- [How it works ?](#how-it-works)
+- [How to ?](#how-to)
+  - [Front-end web development](#front-end-web-development)
+    - [Bind your front-end app to your backend api in development](#bind-your-front-end-app-to-your-backend-api-in-development)
+  - [Backend web devlopment](#backend-web-development)
+    - [Nest - setup static file module but keep controller to root with global prefix](#nest---setup-static-file-module-but-keep-controller-to-root-with-global-prefix)
+    - [Running Multiple Web apps on Aws](#aws---running-multiple-web-apps-on-aws)
+  - [Docker](#docker)
+      - Connect the cli to Docker Hub in linux
+  - [Internet](#)
+    - Bind domain names or subdomain to an ip address
 - [Glossary](#glossary)
 - [To do](#to-do)
 
-## Front-end web development
+<h2 align="center" id="how-it-works">How it works ?</h2>
 
-### Bind your front-end app to your backend api in development
+<h2 align="center" id="how-to">How to ?</h2>
+
+---
+
+### Front-end web development
+
+#### Bind your front-end app to your backend api in development
 
 In web devlopment, a way to allow the user to interact with your service is to provide him a client, an html/css/js page, this client represente the User Interface with your backend server. On certain actions of the user on the user interface (click, keypress, ...) the client will send a request to the backend service representing the user action.
 
@@ -100,9 +109,11 @@ If you are using Nx, put a proxy.config.json at the root of your app:
 
 *note:* If you are using socket.io with namespaces, you don't need to register your namespaces in the proxy.conf.json, socket.io process it himself.
 
-## Nest
+---
 
-### setup static file module but keep controller to root with global prefix
+### Backend web development
+
+#### Nest - setup static file module but keep controller to root with global prefix
 
 <details>
 
@@ -170,9 +181,7 @@ Any other route will be prefix by 'api'.
 
 Keep in mind that this approache might cause unexpected behaviors
 
-## Aws
-
-###  Running Multiple Web apps on Aws
+#### AWS - Running Multiple Web apps on Aws
 
 Sometimes when you are building small apps, you might want to run multiple applications on the same ip address but [bind differents subdomains or domain names](#) to each app, what you are looking for here is to setup a [reverse-proxy](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/), to achieve this, you can use [Nginx](https://www.nginx.com/).
 
@@ -186,7 +195,7 @@ http {
     server_name subdomain.domain-name.com;
 
     location / {
-      proxy_pass http://127.0.0.1:3000
+      proxy_pass http://127.0.0.1:3000;
     }
   }
 
@@ -210,7 +219,9 @@ After this, subdomain.domain-name.com will serve the app running on the port 300
 
 This works because Nginx take a look at the 'host' property of the incoming request and direct it to the appropriate service.
 
-## Glossary
+---
+
+<h2 align="center" id="glossary">Glossary</h2>
 
 ### Example Section
 
@@ -239,6 +250,7 @@ Some alternatives
 - [Alt 2](#)
 - [Alt 3](#)
 
+---
 
 ### Global
 
@@ -254,9 +266,13 @@ Some alternatives
 
 #### SOLID
 
+---
+
 ### Internet
 
 #### Content Delivery Network (CDN)
+
+---
 
 ### Front-end development
 
@@ -314,6 +330,8 @@ Alternatives:
 
 #### Proxy
 
+---
+
 ### Database environment
 
 #### Database
@@ -336,6 +354,8 @@ Alternatives:
 
 #### Redis
 
+---
+
 ### The Programming Languages
 
 #### C
@@ -350,13 +370,13 @@ Alternatives:
 
 #### Javascript
 
+---
+
 ### Other
 
 #### Hot Reload
 
-
-
-## To do
+<h2 align="center" id="to-do">To do</h2>
 
 - write an answer template (in my case, tl;dr, explanation, ...)
 - Create normalization (For example/e.g.)
