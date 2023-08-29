@@ -22,6 +22,7 @@ Please note that this repository is NOT intended to be a proof of good practices
   - [Backend web devlopment](#backend-web-development)
     - [Nest - setup static file module but keep controller to root with global prefix](#nest---setup-static-file-module-but-keep-controller-to-root-with-global-prefix)
     - [Setup an aws ec2 instance to run a node app](#aws---setup-an-aws-ec2-instance-to-run-a-node-app)
+    - [Install docker on AWS](#aws---install-docker-on-aws)
     - [Running Multiple Web apps on Aws](#aws---running-multiple-web-apps-on-aws)
   - [Docker](#docker)
       - Connect the cli to Docker Hub in linux
@@ -274,6 +275,44 @@ pm2 logs 0 --lines 1000 // displays the 1000 last lines of logs of id 0 process
 note: will developping a project like this, developping through ssh and restarting many times my app causes my vm to quickly burn ec2 credits wich leads to the ssh connections to be extremely slow.
 
 ---
+
+#### AWS - Install docker on AWS
+
+Install and start Docker on boot
+
+```sh
+sudo amazon-linux-extras install docker (flem de test mais je trust)
+sudo systemctl enable docker
+sudo systemctl start docker
+```
+
+To be able to use Docker without sudo:
+
+```sh
+sudo usermod -a -G docker ec2-user
+```
+
+To apply permission, you need to reboot your aws instance
+
+Install docker-compose
+
+```sh
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
+
+Fix permissions, you don't need to restart your instance here.
+
+```sh
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+To verify your installation:
+
+```sh
+docker-compose version
+```
+
+CREDIT: https://gist.github.com/npearce/6f3c7826c7499587f00957fee62f8ee9
 
 #### AWS - Running Multiple Web apps on AWS
 
