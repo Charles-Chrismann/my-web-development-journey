@@ -42,6 +42,7 @@ Please note that this repository is NOT intended to be a proof of good practices
     - Bind domain names or subdomain to an ip address
   - [React]
     - layout + routing
+    - useRef on list elements
 - End the topic:
   - topic + idea
   - Proxy front for nx & angular + ws
