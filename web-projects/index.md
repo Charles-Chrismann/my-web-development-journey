@@ -1,0 +1,25 @@
+This is a list of web technologies and projects that use it
+
+- Front-end
+  - [ ] tchat video
+  - [ ] debouncing
+  - [ ] infinite sroll (intersection observer)
+  - [ ] streams
+- Back-end
+  - [ ] OAuth
+  - [ ] Strapi
+  - [ ] Ws
+  - [ ] webrtc
+  - [ ] mailing
+  - [ ] github actions
+  - [ ] GraphQL
+  - [ ] redis
+  - [ ] jest
+- Stacks
+  - [ ] MERN
+  - [ ] MEAN
+  - [ ] FKit
+  - [ ] Nextjs Contentful
+  - [ ] Docusaurus + algoliaDocSearch
+- Non-Web Topics
+  - [ ] Cli
