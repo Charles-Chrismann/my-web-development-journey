@@ -13,12 +13,11 @@ Please note that this repository is NOT intended to be a proof of good practices
 
 ## Table of Contents
 
-- [My Web Development Journey](#my-web-development-journey)
-- [Please note that this repository is NOT intended to be a proof of good practices and does NOT claim to be the best way to do things.](#please-note-that-this-repository-is-not-intended-to-be-a-proof-of-good-practices-and-does-not-claim-to-be-the-best-way-to-do-things)
-  - [Table of Contents](#table-of-contents)
-  - [Learn Web Development](#learn-web-development)
-    - [Ask for help](#ask-for-help)
-    - [Some websites to find help](#some-websites-to-find-help)
+- [Learn web development](#learn-web-development)
+  - [Ask for help](#ask-for-help)
+  - [Some websites to find help](#some-websites-to-find-help)
+- [My courses](./courses/index.md)
+  - [Express](./courses/express/index.md)
 
 ## Learn Web Development
 
