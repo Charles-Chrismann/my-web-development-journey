@@ -41,6 +41,7 @@ Learning comes with a lot of interrogations and issues. Asking for help is absol
 - [Ask about your attempted solution rather than your actual problem](https://xyproblem.info/)
 - [No hello](https://nohello.net/fr/)
 - [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)
+- [How to create a Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
 - [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
 
 ### Some websites to find help
