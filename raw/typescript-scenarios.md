@@ -15,4 +15,5 @@ Type of the value returned by a function
 
 ```ts
 type User = ReturnType<typeof getUser>;
+type FetchDataResult = Awaited<ReturnType<typeof fetchData>>; // for the value returned by an async function, if the function return a Promise<theType>, this is theType
 ```
